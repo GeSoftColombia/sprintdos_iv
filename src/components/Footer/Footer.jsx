@@ -1,6 +1,6 @@
 export const AppFooter = () => {
 
-  const Pie = "Copyright &copy; Website 2022";
+  const Pie = "© 2022 Gesoftcol. All rights reserved.";
 
     return (
       <footer className="mt-auto py-5 bg-light text-center text-lg-start">
