@@ -32,6 +32,14 @@ const productoModel = ()=> {
             nombre: 'Pescado',
             imagen: 'https://i.ytimg.com/vi/Y0EMlGZXLRo/maxresdefault.jpg',
             precio: 100000
+        },
+        {
+            id:6,
+            categoriaid: 2,
+            descripcion: 'Piña Colada',
+            nombre: 'Bebida Alcoholica',
+            imagen: 'https://i.ytimg.com/vi/Y0EMlGZXLRo/maxresdefault.jpg',
+            precio: 100000
         }
     ]
     return productos;
