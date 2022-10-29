@@ -18,7 +18,7 @@ export const ProductoCategoria = (props) => {
         provider.setCarrito([...provider.carrito,producto]);
     }
 
-    const productosCategoria = productos.filter(x => x.categoriaid === props.categoria.id);
+    const productosCategoria = productos.filter(x => x.categoriaid == props.categoria.id);
 
     return (
         <div className="container">
