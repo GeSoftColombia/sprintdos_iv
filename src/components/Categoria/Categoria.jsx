@@ -5,12 +5,12 @@ export const Categoria = (props)=> {
 
     return(
         <div className="col mt-4">
-            <div className="card" style={{width: '18rem'}}>
+            <div className="card" style={{width: '15rem'}}>
                 <img src={props.info.imagen} className="card-img-top" alt="..." /> 
                 <div className="card-body">
-                    <h5 className="card-title">{props.info.nombre}</h5>
+                    <h5 className="card-title">{props.info.name}</h5>
                     <p className="card-text">{props.info.descripcion}</p>
-                    <Link className="btn btn-primary" to={props.info.nombre}>IR A PRODUCTOS</Link>
+                    <Link className="btn btn-primary" to={props.info.nombre}>BUSCAR PRODUCTOS</Link>
                     
                 </div>
             </div>
