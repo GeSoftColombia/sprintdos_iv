@@ -8,6 +8,7 @@ import { CarritoCompras } from "./components/CarritoCompras/CarritoCompras"
 import categoriaModel from "./models/categoriaModel"
 import { InfoDomilicio } from "./components/InfoDomilicio/InfoDomilicio"
 import { FormularioCategoria } from "./components/FormularioCategoria/FormularioCategoria"
+import {Login} from './components/Login/Login'
 
 export const Ruteos = () =>{
 
@@ -16,6 +17,7 @@ export const Ruteos = () =>{
     return(
         <Routes>
             <Route path="/" element={<Inicio/>}></Route>
+            <Route path="/login" element={<Login />} />
             <Route path="/nuevo" element={<AddProducto/>}></Route>
             <Route path="/MiCarrito" element={<CarritoCompras></CarritoCompras>}></Route>
             <Route path="/nuevacategoria" element={<FormularioCategoria></FormularioCategoria>}></Route>
