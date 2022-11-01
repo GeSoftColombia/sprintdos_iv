@@ -32,7 +32,7 @@ export const ProductoCategoria = (props) => {
                     return (
                         <div className="col">
                             <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={object.imagen} />
+                            <Card.Img variant="top" src={object.image} />
                                 <Card.Body>
                                 <Card.Title>{object.nombre}</Card.Title>
                                 <Card.Text>
