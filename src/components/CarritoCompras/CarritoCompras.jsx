@@ -41,7 +41,7 @@ export const CarritoCompras = () => {
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>ID</th>
                         <th>Nombre articulo</th>
                         <th>Precio</th>
                         <th>Cantidad</th>

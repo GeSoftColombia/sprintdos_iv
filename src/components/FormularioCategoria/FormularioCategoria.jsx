@@ -93,7 +93,7 @@ export class FormularioCategoria extends Component{
                                 type="text" 
                                 className="form-control" 
                                 onChange={e => this.setState({ descripcionCategoria: e.target.value})}
-                                placeholder="Ingrese aca el nombre de la categoria" />
+                                placeholder="Ingrese aca la descripcion de la categoria" />
                     </div>
                     <div className="mb-3">
                         <label className="form-label">Imagen para la categoria</label>
@@ -101,7 +101,7 @@ export class FormularioCategoria extends Component{
                             type="text" 
                             className="form-control" 
                             onChange={e => this.setState({ imagenCategoria: e.target.value})}
-                            placeholder="Ingrese aca el nombre de la categoria" />
+                            placeholder="Ingrese aca la imagen de la categoria" />
                     </div>
                 </div>
                 <div className="row">
@@ -109,16 +109,16 @@ export class FormularioCategoria extends Component{
                         {
                             !this.state.loading &&  <button onClick={() => {
                                 this.crearCategoria()
-                            }} className="btn btn-success">Crear categoria</button>
+                            }} className="btn btn-primary" type="submit">Crear categoria</button>
                         }
                         {
                             this.state.loading &&  <div class="spinner-border" role="status">
                                         <span class="visually-hidden">Loading...</span>
-                                </div>
+                        </div>
                         }
                         <button onClick={() => {
                                 this.obtenerCategorias()
-                            }} className="btn btn-success">Cargar Categorias
+                            }} className="btn btn-primary" type="submit">Cargar Categorias
                         </button>
                     </div>
                 </div>

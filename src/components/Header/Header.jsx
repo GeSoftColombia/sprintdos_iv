@@ -69,9 +69,11 @@ export const Header = () => {
               </li>
             </ul>
             <Carrito></Carrito>
-            <Link className="btn btn-warning" to="/login">
+            <div>
+            <Link className="btn btn-dark" to="/login">
               Ingresar
             </Link>
+            </div>
           </div>
         </div>
       </nav>
