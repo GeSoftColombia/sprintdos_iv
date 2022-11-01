@@ -1,6 +1,5 @@
 
 import React, {useState} from 'react'
-import "./ventas.css";
 import data from '../../mock-data.json'
 
 export function Meta(){
@@ -16,19 +15,19 @@ export const Ventas = () => {
   const [registros, setRegistros] = useState(data);
 
   return (
-    <main className="contenedor">
+    <table className="table">
         <h1 className="heading">
             Consolidado de Ventas
         </h1>
 
-        <div className='contenido'>
-            <div className='consolidado'>
+        <div className='col'>
+            <div className='col'>
                     <h2>
                         Reporte de Ventas
                     </h2>
 
-                    <div className='ventas-container'>
-                            <table>
+                    <div>
+                            <table className='table table-striped'>
                                 <thead>
                                     <tr>
                                         <th>Fecha</th>
@@ -50,17 +49,17 @@ export const Ventas = () => {
                     </div>
                 </div>
 
-                <aside className="consolidado">
+                <aside className="table">
                     <h3>
                         Consolidado de ventas
                     </h3>
                     <p>
-                        Total: ${}
+                        Total: $ 1.750.000
                     </p>
                 </aside>
         </div>
 
-    </main>
+    </table>
   )
 }
 
