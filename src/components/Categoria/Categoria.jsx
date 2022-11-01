@@ -1,19 +1,26 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+
 
 
 export const Categoria = (props)=> {
 
     return(
-        <div className="col mt-4">
-            <div className="card" style={{width: '15rem'}}>
-                <img src={props.info.imagen} className="card-img-top" alt="..." /> 
-                <div className="card-body">
-                    <h5 className="card-title">{props.info.name}</h5>
-                    <p className="card-text">{props.info.descripcion}</p>
-                    <Link className="btn btn-primary" to={props.info.nombre}>BUSCAR PRODUCTOS</Link>
-                    
-                </div>
-            </div>
-        </div>
-    )
+        <div class="card mb-4">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src={props.info.imagen} className="card-img-top" alt="..." />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="card-title">{props.info.nombre}</h3>
+        <p class="card-text">{props.info.descripcion}</p>
+        <Link className="btn btn-primary" to={props.info.nombre}>BUSCAR PRODUCTOS</Link>
+      </div>
+    </div>
+  </div>
+</div>
+)
 }
+
+
+

@@ -15,7 +15,7 @@ const categoriaModel = ()=> {
         },
         {
             id: 3,
-            descripcion: 'Algo que se puede apreciar cuando visitas las Playas de Cartagena es la diversidad de deportes acuáticos disponibles, carpas para protegerse del sol, música en vivo y deliciosas opciones culinarias justo ahí a orilla de playa, mientras disfrutas de un clima tropical que permite visitar este lugar todos los meses del año.',
+            descripcion: 'Algo que se puede apreciar cuando visitas las Playas de Cartagena es la diversidad de deportes acuáticos disponibles, carpas para protegerse del sol, música en vivo y deliciosas opciones culinarias justo ahí a orilla de playa, mientras disfrutas de un clima tropical que permite visitar este lugar todos los meses del año',
             nombre: 'Miscelaneas',
             imagen: 'https://us.123rf.com/450wm/pretoperola/pretoperola1402/pretoperola140200029/26275216-sillas-de-playa-con-paraguas-y-hermosa-playa-de-arena.jpg?ver=6'
         }
