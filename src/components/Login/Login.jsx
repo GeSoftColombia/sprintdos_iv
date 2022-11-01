@@ -1,53 +1,49 @@
-import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import "./Login.css";
+import React from 'react';
+import {
+  MDBBtn,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBIcon,
+  MDBInput
+}
+from 'mdb-react-ui-kit';
 
 export function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  function validateForm() {
-    return email.length > 0 && password.length > 0;
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
-
   return (
-    <div className="Login">
-      <h2>Iniciar Sesion</h2>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group size="lg" controlId="email" style={{ marginTop: 20 }}>
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            autoFocus
-            type="email"
-            placeholder="Ingrese su correo"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </Form.Group>
-        <Form.Group size="lg" controlId="password" style={{ marginTop: 20}}>
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Ingrese su contraseña"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </Form.Group>
-        <Button
-          block="true"
-          size="lg"
-          type="submit"
-          disabled={!validateForm()}
-          style={{ marginTop: 20 }}
-        >
-          Iniciar
-        </Button>
-      </Form>
-    </div>
+    <MDBContainer fluid>
+      <MDBRow>
+
+        <MDBCol sm='6'>
+
+          <div className='d-flex flex-row ps-5 pt-5'>
+            <MDBIcon fas icon="crow fa-3x me-3" style={{ color: '#709085' }}/>
+            <span className="h1 fw-bold mb-0">Logo</span>
+          </div>
+
+          <div className='d-flex flex-column justify-content-center h-custom-2 w-75 pt-4'>
+
+            <h3 className="fw-normal mb-3 ps-5 pb-3" style={{letterSpacing: '1px'}}>Log in</h3>
+
+            <MDBInput wrapperClass='mb-4 mx-5 w-100' label='Email address' id='formControlLg' type='email' placeholder='Ingrese su correo'   size="lg"/>
+            <MDBInput wrapperClass='mb-4 mx-5 w-100' label='Password' id='formControlLg' type='password' placeholder='Ingrese su contraseña' size="lg"/>
+
+            <MDBBtn className="mb-4 px-5 mx-5 w-100" color='info' size='lg'>Login</MDBBtn>
+            <p className="small mb-5 pb-lg-3 ms-5"><a class="text-muted" href="#!">Forgot password?</a></p>
+            <p className='ms-5'>Don't have an account? <a href="#!" class="link-info">Register here</a></p>
+
+          </div>
+
+        </MDBCol>
+
+        <MDBCol sm='6' className='d-none d-sm-block px-0'>
+          <img src="https://media.istockphoto.com/photos/tents-on-the-beach-in-hotel-zone-in-cartagena-colombia-picture-id1297675638?k=20&m=1297675638&s=612x612&w=0&h=IPeLyEScfbx_ZkTZ_GS3OhX8tuY_qcYdHFGiN6u_bCM="
+            alt="Login image" className="w-90" style={{objectFit: 'cover', objectPosition: 'left'}} />
+        </MDBCol>
+
+      </MDBRow>
+
+    </MDBContainer>
   );
 }
+

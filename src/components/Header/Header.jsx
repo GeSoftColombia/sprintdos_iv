@@ -70,7 +70,7 @@ export const Header = () => {
             </ul>
             <Carrito></Carrito>
             <Link className="btn btn-warning" to="/login">
-              Log In
+              Ingresar
             </Link>
           </div>
         </div>

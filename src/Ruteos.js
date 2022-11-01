@@ -10,6 +10,7 @@ import { InfoDomilicio } from "./components/InfoDomilicio/InfoDomilicio"
 import { FormularioCategoria } from "./components/FormularioCategoria/FormularioCategoria"
 import {Login} from './components/Login/Login'
 
+
 export const Ruteos = () =>{
 
     const categorias = categoriaModel()
