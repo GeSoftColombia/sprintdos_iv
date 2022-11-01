@@ -67,12 +67,15 @@ export const Header = () => {
                   })}
                 </ul>
               </li>
+              <Link className="nav-link" to="/ventas">
+                Resumen Ventas
+              </Link>
             </ul>
             <Carrito></Carrito>
             <div>
-            <Link className="btn btn-dark" to="/login">
-              Ingresar
-            </Link>
+              <Link className="btn btn-dark" to="/login">
+                Ingresar
+              </Link>
             </div>
           </div>
         </div>

@@ -9,6 +9,7 @@ import categoriaModel from "./models/categoriaModel"
 import { InfoDomilicio } from "./components/InfoDomilicio/InfoDomilicio"
 import { FormularioCategoria } from "./components/FormularioCategoria/FormularioCategoria"
 import {Login} from './components/Login/Login'
+import {Ventas} from './components/Ventas/ventas'
 
 
 export const Ruteos = () =>{
@@ -23,6 +24,7 @@ export const Ruteos = () =>{
             <Route path="/MiCarrito" element={<CarritoCompras></CarritoCompras>}></Route>
             <Route path="/nuevacategoria" element={<FormularioCategoria></FormularioCategoria>}></Route>
             <Route path="/Checkout" element={<InfoDomilicio></InfoDomilicio>}></Route>
+            <Route path="/Ventas" element={<Ventas></Ventas>}></Route>
             {
                 categorias.map((object,index) => {
                     return <Route key={index} path={object.nombre} element={<ProductoCategoria categoria={object} />}></Route>
