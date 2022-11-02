@@ -49,14 +49,14 @@ export const Ventas = () => {
                     </div>
                 </div>
 
-                <aside className="table">
+                <table className="table table-striped">
                     <h3>
                         Consolidado de ventas
                     </h3>
                     <p>
                         Total: $ 1.750.000
                     </p>
-                </aside>
+                </table>
         </div>
 
     </table>

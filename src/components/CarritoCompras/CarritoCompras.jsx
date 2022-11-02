@@ -58,7 +58,7 @@ export const CarritoCompras = () => {
                                         <td><button className="btn btn-primary">+</button>
                                                 <input value={1} type="text"></input>
                                             <button className="btn btn-danger">-</button></td>
-                                        <td><box-icon name="trash"></box-icon></td>
+                                        <td><box-icon type='solid' name='trash'></box-icon></td>
                                     </tr>
                        }) 
                    }

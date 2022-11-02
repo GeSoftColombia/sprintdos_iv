@@ -18,7 +18,7 @@ export const Carrito = () => {
     return(
         <>
             <Link to='/MiCarrito'>
-                <box-icon name='cart-add'></box-icon>
+            <box-icon name='cart'></box-icon>
             </Link>
             <h6>{cantidad}</h6>
         </>
