@@ -1,3 +1,4 @@
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { AppCarousel } from "../AppCarousel/AppCarousel";
@@ -35,16 +36,7 @@ export const Header = () => {
                   Home
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link className="nav-link" to="/nuevo">
-                  Nuevo Producto
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link className="nav-link" to="/nuevacategoria">
-                  Nueva Categoria
-                </Link>
-              </li>
+              
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
@@ -67,10 +59,20 @@ export const Header = () => {
                   })}
                 </ul>
               </li>
-              <Link className="nav-link" to="/ventas">
+              <NavDropdown title="Administración" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="/nuevo">Nuevo Producto</NavDropdown.Item>
+              <NavDropdown.Item href="/nuevacategoria">
+                Nueva Categoria
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/Ventas">
                 Resumen Ventas
-              </Link>
+              </NavDropdown.Item>
+            </NavDropdown>  
             </ul>
+            
+            
+            
             <Carrito></Carrito>
             <div>
               <Link className="btn btn-dark" to="/login">
