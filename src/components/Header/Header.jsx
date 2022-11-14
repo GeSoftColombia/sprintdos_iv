@@ -5,9 +5,11 @@ import { AppCarousel } from "../AppCarousel/AppCarousel";
 import { Carrito } from "../Carrito/Carrito";
 import categoriaModel from "../../models/categoriaModel";
 import Login from "../Login/Login";
+import logo from "../../images/logo_nom.ico"
+
+
 
 export const Header = () => {
-  const Titulo = "Gesoftcol";
 
   const categorias = categoriaModel();
 
@@ -16,7 +18,7 @@ export const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            {Titulo}
+          <img className='logoEmpresa' src={logo} alt='logoEmpresa' />
           </a>
           <button
             className="navbar-toggler"
