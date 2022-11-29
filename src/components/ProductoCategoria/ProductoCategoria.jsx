@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useContext } from "react";
 import { DataContext } from "../../Context/DataProvider";
+import ProductosCategoria from './ProductoCategoria.css'
 
 
 
